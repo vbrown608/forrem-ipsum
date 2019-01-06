@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)https://d6tizftlrpuof.cloudfront.net/live/i/578954a4d3ee0d2a906cc810/d076365149167cc9a8b87b48cce5f4aaa42e8c1c.html -->
+<html ng-app="ubWidget" class="svg ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./18b0b457abf0b400ef292e38e6b04b50" class="ng-scope">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="//d6tizftlrpuof.cloudfront.net/live/campaign/js/e2456a107d.legacybrowser.js"></script>
+    <![endif]-->
+    <script type="campaign/form">
+        {"id":"59ca719994bbbc60f711a600","version":9,"form":{"pages":[{"type":"form","fields":[{"type":"toggle","caption":"Toggle","autoSubmit":true,"forceRequired":false,"fixed":false,"interactive":true,"showHideRule":[],"validationText":"This field is required","title":"Was this valuable to you?","points":"2","options":[{"title":"Yes","value":"5"},{"title":"No","value":"1"}],"name":"Valuable","empty":"Please choose an option"}],"jump":"End","jumpRules":[],"autoSubmit":true,"name":"Start"},{"type":"end","fields":[{"type":"header","caption":"Header","autoSubmit":false,"forceRequired":false,"fixed":false,"interactive":false,"showHideRule":[],"validationText":"This field is required","text":"Thank You"},{"type":"paragraph","caption":"Paragraph","autoSubmit":false,"forceRequired":false,"fixed":false,"interactive":false,"showHideRule":[],"validationText":"This field is required","text":"Your feedback helps us improve our research."}],"jump":null,"jumpRules":[],"autoSubmit":false,"autoclose":false,"name":"End"}],"allowedPageTypes":["form","end"]}}
+    </script>
+    <script>
+    function supportsSVG() {
+      return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+    }
+    if (supportsSVG()) {
+      document.documentElement.className += ' svg';
+    } else {
+      document.documentElement.className += ' no-svg';
+    }
+    </script>
+</head>
+<body class="in-page" marginwidth="0" marginheight="0">
+<div in-page-form-container="" ub-action="//w.usabilla.com/incoming" allow-html="true"><div id="logo"></div>
+<form in-page-form="" name="form" id="form" ng-submit="submit()" ub-action="//w.usabilla.com/incoming" ng-class="[&#39;type-&#39; + currentPage.type, &#39;page-&#39; + pageNumber]" class="ng-pristine ng-valid ng-scope type-form page-1 ng-valid-required">
+    <!-- ngIf: campaign.data.progressBar.active -->
+    <!-- ngRepeat: control in currentPage.fields --><div ng-repeat="control in currentPage.fields" ub-field="" control="control" data="data" state="state" on-auto-submit="autoSubmitForm(control)" class="control-container control-toggle"><!-- ngIf: !hide --><!-- ngInclude: template --><div ng-if="!hide" ng-include="template" class="ng-scope"><div ng-form="form" class="ng-pristine ng-valid ng-scope ng-valid-required">
+    <!-- ngIf: control.title --><h3 ng-if="control.title" class="ng-binding ng-scope">Was this valuable to you?<!-- ngIf: control.required --></h3><!-- end ngIf: control.title -->
+    <ul class="inline">
+        <!-- ngRepeat: option in control.options --><li ng-repeat="option in control.options" class="input-toggle ng-scope">
+            <input type="radio" ng-class="{&#39;checked&#39;: data[control.name] == option.value}" id="Valuable-5-0" name="Valuable" ng-model="data[control.name]" value="5" ng-change="autoSubmit(control)" ng-required="control.required" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-required">
+            <label for="Valuable-5-0" class="btn ng-binding positive" ng-class="{
+                    &#39;positive&#39;  : option.value === &#39;5&#39;,
+                    &#39;neutral&#39;   : option.value === &#39;3&#39;,
+                    &#39;negative&#39;  : option.value === &#39;1&#39;
+                }">
+                Yes
+            </label>
+        </li><!-- end ngRepeat: option in control.options --><li ng-repeat="option in control.options" class="input-toggle ng-scope">
+            <input type="radio" ng-class="{&#39;checked&#39;: data[control.name] == option.value}" id="Valuable-1-1" name="Valuable" ng-model="data[control.name]" value="1" ng-change="autoSubmit(control)" ng-required="control.required" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-required">
+            <label for="Valuable-1-1" class="btn ng-binding negative" ng-class="{
+                    &#39;positive&#39;  : option.value === &#39;5&#39;,
+                    &#39;neutral&#39;   : option.value === &#39;3&#39;,
+                    &#39;negative&#39;  : option.value === &#39;1&#39;
+                }">
+                No
+            </label>
+        </li><!-- end ngRepeat: option in control.options -->
+    </ul>
+
+    <!-- ngIf: form.$invalid && state.submitted -->
+</div>
+</div><!-- end ngIf: !hide --></div><!-- end ngRepeat: control in currentPage.fields -->
+</form>
+</div>
+
+<script type="text/javascript" src="./angular.min.js.download"></script>
+<script type="text/javascript" src="./d1f77aa4ff.in-page-form.js.download"></script>
+
+
+
+</body></html>
