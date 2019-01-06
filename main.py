@@ -26,7 +26,7 @@ class Style:
         self.name = name
         self.selector = selector
         self.separator = "\n" if newline else ""
-        self.f = open(Path("corpus/" + name + ".txt"), "w")
+        self.f = open(Path("corpus/" + name + ".txt"), "w", encoding='utf-8')
 
     def select_from_page(self, page):
         for el in page.cssselect(self.selector):
@@ -45,6 +45,7 @@ styles = [
 ]
 
 for url in article_urls:
+    print(".",end="")
     html = opener.open("https://www.forrester.com" + url).read()
     page = fromstring(html)
     for style in styles:
@@ -54,4 +55,3 @@ for url in article_urls:
 # Close files
 for style in styles:
     style.f.close()
-
