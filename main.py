@@ -1,7 +1,7 @@
 import http.cookiejar
 import urllib.request
-
 import time
+from pathlib import Path
 
 from lxml.cssselect import CSSSelector
 from lxml.html import fromstring
@@ -49,7 +49,7 @@ for url in article_urls:
     page = fromstring(html)
     for style in styles:
         style.select_from_page(page)
-    time.sleep(5)
+    time.sleep(2)
 
 # Close files
 for style in styles:
